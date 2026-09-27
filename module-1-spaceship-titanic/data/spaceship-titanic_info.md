@@ -1,4 +1,4 @@
-Источник: Kaggle — Spaceship Titanic
+Источник: Kaggle — [Spaceship Titanic](https://www.kaggle.com/competitions/spaceship-titanic)
 
 Spaceship Titanic — это межзвёздный пассажирский корабль, который во время полёта столкнулся с пространственно-временной аномалией. Почти половина пассажиров была перемещена в другое измерение. Задача — предсказать, какие именно пассажиры были перемещены (Transported = True).
 
