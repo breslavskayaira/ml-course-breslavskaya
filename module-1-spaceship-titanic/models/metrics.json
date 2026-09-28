@@ -1,0 +1,18 @@
+{
+  "logistic_regression": {
+    "accuracy": 0.7941,
+    "precision": 0.7878,
+    "recall": 0.8094,
+    "f1": 0.7984,
+    "roc_auc": 0.8816,
+    "training_time_sec": 0.007342100143432617
+  },
+  "decision_tree": {
+    "accuracy": 0.7878,
+    "precision": 0.7924,
+    "recall": 0.7842,
+    "f1": 0.7883,
+    "roc_auc": 0.8571121499283059,
+    "training_time_sec": 0.012622833251953125
+  }
+}
