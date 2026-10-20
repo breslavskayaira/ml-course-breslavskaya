@@ -1,6 +1,6 @@
 {
   "random_forest": {
-    "Time (s)": 0.2,
+    "Time (s)": 0.201,
     "Accuracy": 0.7608,
     "Precision": 0.5348,
     "Recall": 0.7594,
@@ -8,7 +8,7 @@
     "ROC-AUC": 0.8394
   },
   "xgboost": {
-    "Time (s)": 0.186,
+    "Time (s)": 0.204,
     "Accuracy": 0.7743,
     "Precision": 0.5579,
     "Recall": 0.7219,
@@ -16,7 +16,7 @@
     "ROC-AUC": 0.8312
   },
   "lightgbm": {
-    "Time (s)": 0.071,
+    "Time (s)": 0.079,
     "Accuracy": 0.7601,
     "Precision": 0.5341,
     "Recall": 0.754,
@@ -24,7 +24,7 @@
     "ROC-AUC": 0.8375
   },
   "catboost": {
-    "Time (s)": 0.504,
+    "Time (s)": 0.528,
     "Accuracy": 0.7488,
     "Precision": 0.5187,
     "Recall": 0.7433,
@@ -32,7 +32,7 @@
     "ROC-AUC": 0.8409
   },
   "stacking_bonus": {
-    "Time (s)": 5.262,
+    "Time (s)": 5.409,
     "Accuracy": 0.7977,
     "Precision": 0.6344,
     "Recall": 0.5615,
