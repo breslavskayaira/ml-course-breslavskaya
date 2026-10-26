@@ -13,7 +13,7 @@
 
 **Время обучения:** LR ≈ 0.007 сек, DT ≈ 0.013 сек
 
-
+```
 ├── module-1-spaceship-titanic/
 │   ├── README.md
 │   ├── notebook.ipynb
@@ -29,7 +29,7 @@
 │   │   └── metrics.json
 │   ├── examples/
 │   └── requirements.txt
-
+```
 
 ## Быстрый старт
 

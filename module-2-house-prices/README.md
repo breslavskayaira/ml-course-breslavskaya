@@ -15,7 +15,7 @@
 **Лучшая модель:** Lasso (R² = 0.91)
 **Время обучения:** < 0.02 сек на модель
 
-
+```
 ├── module-2-house-prices/
 │   ├── README.md
 │   ├── notebook.ipynb
@@ -33,7 +33,7 @@
 │   │   └── metrics.json
 │   ├── examples/
 │   └── requirements.txt
-
+```
 
 ## Быстрый старт
 
