@@ -15,18 +15,6 @@
 **Лучшая модель:** Lasso (R² = 0.91)
 **Время обучения:** < 0.02 сек на модель
 
-## Быстрый старт
-
-```python
-import joblib
-import requests
-from io import BytesIO
-
-BASE_URL = "https://raw.githubusercontent.com/breslavskayaira/ml-course-breslavskaya/main/module-2-house-prices"
-model = joblib.load(BytesIO(requests.get(f"{BASE_URL}/models/lasso_model.pkl").content))
-scaler = joblib.load(BytesIO(requests.get(f"{BASE_URL}/models/scaler.pkl").content))
-features = requests.get(f"{BASE_URL}/models/feature_cols.json").json()
-
 
 ├── module-2-house-prices/
 │   ├── README.md
@@ -45,3 +33,16 @@ features = requests.get(f"{BASE_URL}/models/feature_cols.json").json()
 │   │   └── metrics.json
 │   ├── examples/
 │   └── requirements.txt
+
+
+## Быстрый старт
+
+```python
+import joblib
+import requests
+from io import BytesIO
+
+BASE_URL = "https://raw.githubusercontent.com/breslavskayaira/ml-course-breslavskaya/main/module-2-house-prices"
+model = joblib.load(BytesIO(requests.get(f"{BASE_URL}/models/lasso_model.pkl").content))
+scaler = joblib.load(BytesIO(requests.get(f"{BASE_URL}/models/scaler.pkl").content))
+features = requests.get(f"{BASE_URL}/models/feature_cols.json").json()

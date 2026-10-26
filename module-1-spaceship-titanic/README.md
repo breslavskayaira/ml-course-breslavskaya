@@ -13,18 +13,6 @@
 
 **Время обучения:** LR ≈ 0.007 сек, DT ≈ 0.013 сек
 
-## Быстрый старт
-
-```python
-import joblib
-import requests
-from io import BytesIO
-
-BASE_URL = "https://raw.githubusercontent.com/breslavskayaira/ml-course-breslavskaya/main/module-1-spaceship-titanic"
-model = joblib.load(BytesIO(requests.get(f"{BASE_URL}/models/lr_model.pkl").content))
-scaler = joblib.load(BytesIO(requests.get(f"{BASE_URL}/models/scaler.pkl").content))
-features = requests.get(f"{BASE_URL}/models/feature_cols.json").json()
-
 
 ├── module-1-spaceship-titanic/
 │   ├── README.md
@@ -41,3 +29,16 @@ features = requests.get(f"{BASE_URL}/models/feature_cols.json").json()
 │   │   └── metrics.json
 │   ├── examples/
 │   └── requirements.txt
+
+
+## Быстрый старт
+
+```python
+import joblib
+import requests
+from io import BytesIO
+
+BASE_URL = "https://raw.githubusercontent.com/breslavskayaira/ml-course-breslavskaya/main/module-1-spaceship-titanic"
+model = joblib.load(BytesIO(requests.get(f"{BASE_URL}/models/lr_model.pkl").content))
+scaler = joblib.load(BytesIO(requests.get(f"{BASE_URL}/models/scaler.pkl").content))
+features = requests.get(f"{BASE_URL}/models/feature_cols.json").json()

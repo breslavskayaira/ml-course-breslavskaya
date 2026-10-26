@@ -19,17 +19,6 @@
 - **Соотношение Precision и Recall:** В базовых моделях с взвешенными классами (`class_weight='balanced'`) `Recall` составляет `74–78%`, что позволяет находить подавляющее большинство реально уходящих клиентов, тогда как в `Stacking` со стандартным порогом `0.5` `Precision` выше `Recall` (`0.6595` против `0.5481`) — мета-модель осторожнее выдаёт метку «уйдёт».
 - **Бизнес-порог:** Смещение порога классификации с учётом матрицы стоимости (`FN = 5`, `FP = 1`) дополнительно снижает суммарные финансовые потери оператора.
 
-## Быстрый старт
-
-```python
-import joblib
-import requests
-from io import BytesIO
-
-BASE_URL = "https://raw.githubusercontent.com/breslavskayaira/ml-course-breslavskaya/main/module-3-churn"
-model = joblib.load(BytesIO(requests.get(f"{BASE_URL}/models/best_model.pkl").content))
-feature_cols = requests.get(f"{BASE_URL}/models/feature_cols.json").json()
-
 
 ├── module-3-churn/
 │   ├── README.md
@@ -54,3 +43,15 @@ feature_cols = requests.get(f"{BASE_URL}/models/feature_cols.json").json()
 │   │   ├── shap_waterfall.png
 │   │   └── roc_curves.png
 │   └── requirements.txt
+
+
+## Быстрый старт
+
+```python
+import joblib
+import requests
+from io import BytesIO
+
+BASE_URL = "https://raw.githubusercontent.com/breslavskayaira/ml-course-breslavskaya/main/module-3-churn"
+model = joblib.load(BytesIO(requests.get(f"{BASE_URL}/models/best_model.pkl").content))
+feature_cols = requests.get(f"{BASE_URL}/models/feature_cols.json").json()
