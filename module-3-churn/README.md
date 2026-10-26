@@ -29,3 +29,28 @@ from io import BytesIO
 BASE_URL = "https://raw.githubusercontent.com/breslavskayaira/ml-course-breslavskaya/main/module-3-churn"
 model = joblib.load(BytesIO(requests.get(f"{BASE_URL}/models/best_model.pkl").content))
 feature_cols = requests.get(f"{BASE_URL}/models/feature_cols.json").json()
+
+
+├── module-3-churn/
+│   ├── README.md
+│   ├── notebook.ipynb
+│   ├── data/
+│   │   ├── telco_churn.csv
+│   │   └── churn_info.md
+│   ├── models/
+│   │   ├── best_model.pkl
+│   │   ├── rf_model.pkl
+│   │   ├── xgb_model.pkl
+│   │   ├── lgbm_model.pkl
+│   │   ├── cat_model.pkl
+│   │   ├── scaler.pkl
+│   │   ├── feature_cols.json
+│   │   ├── label_encoders.pkl
+│   │   └── metrics.json
+│   ├── examples/
+│   │   ├── eda_plots.png
+│   │   ├── feature_importance.png
+│   │   ├── shap_summary.png
+│   │   ├── shap_waterfall.png
+│   │   └── roc_curves.png
+│   └── requirements.txt

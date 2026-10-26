@@ -24,3 +24,20 @@ BASE_URL = "https://raw.githubusercontent.com/breslavskayaira/ml-course-breslavs
 model = joblib.load(BytesIO(requests.get(f"{BASE_URL}/models/lr_model.pkl").content))
 scaler = joblib.load(BytesIO(requests.get(f"{BASE_URL}/models/scaler.pkl").content))
 features = requests.get(f"{BASE_URL}/models/feature_cols.json").json()
+
+
+├── module-1-spaceship-titanic/
+│   ├── README.md
+│   ├── notebook.ipynb
+│   ├── data/
+│   │   ├── test.csv
+│   │   ├── train.csv
+│   │   └── spaceship-titanic_info.md
+│   ├── models/
+│   │   ├── dt_model.pkl
+│   │   ├── lr_model.pkl
+│   │   ├── scaler.pkl
+│   │   ├── feature_cols.json
+│   │   └── metrics.json
+│   ├── examples/
+│   └── requirements.txt

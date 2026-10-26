@@ -26,3 +26,22 @@ BASE_URL = "https://raw.githubusercontent.com/breslavskayaira/ml-course-breslavs
 model = joblib.load(BytesIO(requests.get(f"{BASE_URL}/models/lasso_model.pkl").content))
 scaler = joblib.load(BytesIO(requests.get(f"{BASE_URL}/models/scaler.pkl").content))
 features = requests.get(f"{BASE_URL}/models/feature_cols.json").json()
+
+
+├── module-2-house-prices/
+│   ├── README.md
+│   ├── notebook.ipynb
+│   ├── data/
+│   │   ├── test.csv
+│   │   ├── train.csv
+│   │   └── house_prices_info.md
+│   ├── models/
+│   │   ├── enet_model.pkl
+│   │   ├── lasso_model.pkl
+│   │   ├── ridge_model.pkl
+│   │   ├── lr_model.pkl
+│   │   ├── scaler.pkl
+│   │   ├── feature_cols.json
+│   │   └── metrics.json
+│   ├── examples/
+│   └── requirements.txt
